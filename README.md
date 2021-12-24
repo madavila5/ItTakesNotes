@@ -14,8 +14,11 @@ Note Taker Application
 
 # Images
 
-<img src="Images/Notes1.png" alt="">
+<img src="Images/Notes.png" alt="">
 
 
 # Link
  https://madavila5.github.io/ItTakesNotes/
+ https://ittakesnotes.herokuapp.com/
+ https://git.heroku.com/ittakesnotes.git
+ 
