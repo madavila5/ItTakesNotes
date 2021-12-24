@@ -23,3 +23,13 @@ app.get('/api/notes', (req,res)=>{
     let notes = JSON.parse(fs.readFileSync('./db/db.json', "utf-8"));
     res.json(notes);}
 );
+//POST
+app.post('api/notes', (req,res)=>{
+    let notes = JSON.parse(fs.readFileSync('./db/db.json', 'utf-8'));
+    let newNote = req.body;
+    newNote.id = notes.length+1;
+    notes.push(newNote);
+    fs.readFileSync('./db/db.json', JSON.stringify(notes));
+    res.send('success');
+    }
+    );
